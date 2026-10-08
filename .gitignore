@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Large Model Files
+models_shallow/
+*.pt
+*.pkl
+*.bin
+
+# 念のため、100MBを超えそうな生成物を除外
+# (通常のLoRAは数MBなのでプッシュ可能ですが、フルモデルのマージなどを避けるため)
+*merged*/
+
+# Build and Dist
+build/
+dist/
+*.exe
+*.dll
